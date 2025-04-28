@@ -18,19 +18,20 @@ import thumbsup from "../assets/images/thumbsup.png";
 
 <MainLayout title="Travelform">
 	
-    <div class="top-2 p-2 w-full z-50">
+    <div class="top-2 p-2 w-full z-50 ">
         <Header />
         </div>
 
-        <ul class="steps">
-            <li class="step step-primary">Register</li>
-            <li class="step">Choose plan</li>
-            <li class="step">Purchase</li>
-            <li class="step">Receive Product</li>
-          </ul>
+<section class="container mx-auto m-sectiontop px-4">
+        
+
+          <div id="section1" class="pt-10">
+            <progress class="progress w-150" value="0" max="100"></progress>
+            <h2>1/3</h2>
 
           <Travelform
-        img="Japan.webp" 
+          
+        img="travelform1.webp" 
         imgtekst="japan"
         titel="Hvor vil du gerne hen?"
         tekst="Hvilken verdensdel drømmer du mest om?"
@@ -38,20 +39,21 @@ import thumbsup from "../assets/images/thumbsup.png";
         mulighed2="Sydamerika"
         mulighed3="Asien"
         mulighed4="Afrika"
-        url="/singleview"
+        url1="#section2"
+        url2="#section2"
         urlbuttontekst2="Næste"
         urlbuttontekst1="Tilbage"
           ></Travelform>
+        </div>
 
-          <ul class="steps">
-            <li class="step step-primary">Register</li>
-            <li class="step step-primary">Choose plan</li>
-            <li class="step">Purchase</li>
-            <li class="step">Receive Product</li>
+          <ul class="steps pt-10">
+            <progress class="progress w-150" value="10" max="100"></progress>
+            <h2>2/3</h2>
           </ul>
 
-          <Travelform2
-          img="Japan.webp" 
+          <div id="section2" class="pt-10">
+          <Travelform2 
+          img="travelform2.webp" 
           imgtekst="japan"
           titel="Hvor vil du gerne hen?"
           tekst="Hvilken verdensdel drømmer du mest om?"
@@ -59,20 +61,21 @@ import thumbsup from "../assets/images/thumbsup.png";
           mulighed2="Sydamerika"
           mulighed3="Asien"
           mulighed4="Afrika"
-          url="/singleview"
+          url1="section1"
+           url2="section3"
           urlbuttontekst2="Næste"
           urlbuttontekst1="Tilbage"
             ></Travelform2>
+          </div>
 
-            <ul class="steps">
-              <li class="step step-primary">Register</li>
-              <li class="step step-primary">Choose plan</li>
-              <li class="step step-primary">Purchase</li>
-              <li class="step">Receive Product</li>
+            <ul class="steps pt-10">
+              <progress class="progress w-150" value="40" max="100"></progress>
+              <h2>3/3</h2>
             </ul>
  
+            <section id="section3">
             <Travelform
-            img="Japan.webp" 
+            img="travelform3.webp" 
             imgtekst="japan"
             titel="Hvor vil du gerne hen?"
             tekst="Hvilken verdensdel drømmer du mest om?"
@@ -80,9 +83,11 @@ import thumbsup from "../assets/images/thumbsup.png";
             mulighed2="Sydamerika"
             mulighed3="Asien"
             mulighed4="Afrika"
-            url="/singleview"
+            url1="section2"
+           url2="section3"
             urlbuttontekst2="Næste"
             urlbuttontekst1="Tilbage"
               ></Travelform>
+            </section>
 
   </MainLayout>

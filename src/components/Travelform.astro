@@ -1,23 +1,18 @@
 ---
 import Link from '../components/Link.astro';
 
-const {  img="", imgtekst="", titel="",  mulighed1="", mulighed2="", mulighed3="", mulighed4="", tekst="", url="", urlbuttontekst1="", urlbuttontekst2="" } = Astro.props;
+const {  img="", imgtekst="", titel="",  mulighed1="", mulighed2="", mulighed3="", mulighed4="", tekst="", url1="", url2="", urlbuttontekst1="", urlbuttontekst2="" } = Astro.props;
 
-//Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
-const variantClasses = {
-"primary": "btn-primary",
-"secondary": "btn-secondary"
-};
 ---
 
 <section class="grid grid-cols-2">
-<div>
+<div class="pt-15">
     <h2>{titel}</h2>
     <p>{tekst}</p>
-    <ul class="list bg-base-100 rounded-box shadow-md">
+    <ul class="list bg-base-100 rounded-box">
 
         
-        <li class="list-row grid grid-cols-2">
+        <li class="list-row grid grid-cols-2 pt-15">
           <div>
             <div>{mulighed1}</div>
           </div>
@@ -54,17 +49,17 @@ const variantClasses = {
         </li>
         
       </ul>
-      <section class="grid grid-cols-2 gap-8">
+      <section class="grid grid-cols-2 gap-8 pt-15">
         <div>
-          <Link href={url} variant="primary" size="medium">{urlbuttontekst1}</Link>
+          <Link href={url1} variant="primary" size="medium">{urlbuttontekst1}</Link>
     </div>
     <div>
-      <Link href={url} variant="primary" size="medium">{urlbuttontekst2}</Link>
+      <Link href={url2} variant="primary" size="medium">{urlbuttontekst2}</Link>
     </div>
     </section>
 </div>
 <div>
-    <img
+    <img class="width-1/2"
     src={img}
     alt={imgtekst} />
 </div>
