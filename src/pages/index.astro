@@ -3,7 +3,9 @@ import MainLayout from "../layouts/MainLayout.astro";
 import tailwind from "../styles/tailwind.css";
 import Button from '../components/Button.astro';
 import Header from '../components/Header.astro';
+import Icon from '../components/Icon.astro';
 import Dropdown from '../components/Dropdown.astro';
+import Trustpilot from '../components/Trustpilot.astro';
 import Card from '../components/Card.astro';
 import Form from '../components/Card.astro';
 import Button2 from '../components/Button2.astro';
@@ -70,11 +72,27 @@ import thumbsup from "../assets/images/thumbsup.png";
         <section class="container mx-auto m-sectiontop px-4 pt-15">
           <h2>Section 2</h2>
           <div class="grid grid-cols-5 md:grid-cols-3 lg:grid-cols-5 gap-4">
-<p>Icon</p>
-<p>Icon</p>
-<p>Icon</p>
-<p>Icon</p>
-<p>Icon</p>
+<Icon
+iconimage="Japan.webp"
+tekst="Lorem ipsum"
+></Icon>
+<Icon
+iconimage="Japan.webp"
+tekst="Lorem ipsum"
+></Icon>
+<Icon
+iconimage="Japan.webp"
+tekst="Lorem ipsum"
+></Icon>
+<Icon
+iconimage="Japan.webp"
+tekst="Lorem ipsum"
+></Icon>
+<Icon
+iconimage="Japan.webp"
+tekst="Lorem ipsum"
+></Icon>
+
           </div>
           </section>
 
@@ -121,15 +139,129 @@ import thumbsup from "../assets/images/thumbsup.png";
     </section>
       
        <!-- Section 4 -->
+        <section class="container mx-auto m-sectiontop px-4 pt-15">
+          <h2>Section 4</h2>
+          <h2>Ofte stillede spørgsmål</h2>
        <Dropdown title="Hvordan tilmelder jeg mig?" content="Her kan du finde information om, hvordan du tilmelder dig." />
        <Dropdown title="Er rejseforsrikring inkluderet i mit ophold?" content="Her kan du finde information om, hvordan du tilmelder dig." />
-       <Dropdown title="Hvordan tilmelder jeg mig?" content="Her kan du finde information om, hvordan du tilmelder dig." client:load />
-
-
-      
-      
-       <!-- Section 4 -->
-       <section>
-       <Form></Form>
+       <Dropdown title="Hvornår er der infomøder?" content="Her kan du finde information om, hvordan du tilmelder dig."/>
+       <Dropdown title="Hvad handler undervisningen om?" content="Her kan du finde information om, hvordan du tilmelder dig."/>
+       <Dropdown title="Hvor mange penge kan jeg forvente at bruge på mit ophold?" content="Her kan du finde information om, hvordan du tilmelder dig."/>
+       <Button>Find infomøder her</Button>
       </section>
+
+
+
+       <!-- Section 5 -->
+       <section class="">
+        <h2>Section 5</h2>
+        <h2>Tidligere deltager</h2>
+        <section>
+          <div
+            class="hero min-h-screen relative"
+            style="background-image: url('Japan.webp');">
+            
+          
+            <!-- Overlay -->
+            <div class="hero-overlay"></div>
+          
+            <!-- Content -->
+            <div class="">
+            <div class="grid grid-cols-3 gap-4">
+              <Card
+              url="/singleview"
+              cardimage="Japan.webp"
+              cardimagealt="3"
+              cardtitel="Navn, alder, by"
+              cardtekst="Lorem ipsum"
+              cardbuttontekst="Læs mere" 
+              badgenyt="false"
+              badgerabat="false"
+              badgefaatilbage="false"
+              ></Card>
+              <Card
+              url="/singleview"
+              cardimage="Japan.webp"
+              cardimagealt="3"
+              cardtitel="Navn, alder, by"
+              cardtekst="Lorem ipsum"
+              cardbuttontekst="Læs mere" 
+              badgenyt="false"
+              badgerabat="false"
+              badgefaatilbage="false"
+              ></Card>
+              <Card
+              url="/singleview"
+              cardimage="Japan.webp"
+              cardimagealt="3"
+              cardtitel="Navn, alder, by"
+              cardtekst="Lorem ipsum"
+              cardbuttontekst="" 
+              badgenyt="false"
+              badgerabat="false"
+              badgefaatilbage="false"
+              ></Card>
+          </div>
+    </section>
+
+
+      
+      
+       <!-- Section 6 -->
+        <h2>Section 6</h2>
+        <h2>Vi gør en forskel</h2>
+       <section class="grid grid-cols-4 gap-4">
+        <Icon
+        iconimage="Japan.webp"
+        tekst="Lorem ipsum"
+        ></Icon>
+        <Icon
+iconimage="Japan.webp"
+tekst="Lorem ipsum"
+></Icon>
+<Icon
+iconimage="Japan.webp"
+tekst="Lorem ipsum"
+></Icon>
+<Icon
+iconimage="Japan.webp"
+tekst="Lorem ipsum"
+></Icon>
+<Button>Læs mere</Button>
+      </section>
+
+
+      <!-- Section 7 -->
+      <h2>Section 7</h2>
+      <h2>Trustpilot</h2>
+     <section class="grid grid-cols-4 gap-4">
+    <Trustpilot
+    time="1 dag siden"
+    titel="Fantastisk oplevelse"
+    tekst="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+    navn="Amalie Jensen"
+   >
+   <Trustpilot
+   time="1 dag siden"
+   titel="Fantastisk oplevelse"
+   tekst="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+   navn="Amalie Jensen"
+  >
+  <Trustpilot
+  time="1 dag siden"
+  titel="Fantastisk oplevelse"
+  tekst="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+  navn="Amalie Jensen"
+ >
+ <Trustpilot
+ time="1 dag siden"
+ titel="Fantastisk oplevelse"
+ tekst="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+ navn="Amalie Jensen"
+>
+    </section>
+
+    
+
+
   </MainLayout>

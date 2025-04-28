@@ -2,14 +2,22 @@
 const { time="", titel="", tekst="", navn="" } = Astro.props;
 --- 
 
-<div class="carousel rounded-box">
+<div class="carousel rounded-box bg-white">
   <div class="carousel-item">
-    <p>{time}</p>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+    <div class="grid grid-cols-2 gap-4">
+      <div>
+      <img
+      src="stjerner.svg"
       alt="Rating" />
-      <h3>{titel}</h3>
-      <p>{tekst}</p>
-      <p>{navn}</p>
+    </div>
+    <div>
+      <p>{time}</p>
+    </div>
+  </div>
+  <div>
+  <h3>{titel}</h3>
+  <p>{tekst}</p>
+  <p>{navn}</p>
+</div>
   </div>
 </div>
