@@ -5,6 +5,7 @@ import Button from '../components/Button.astro';
 import Header from '../components/Header.astro';
 import Icon from '../components/Icon.astro';
 import Travelform from '../components/Travelform.astro';
+import Travelform2 from '../components/Travelform2.astro';
 import Dropdown from '../components/Dropdown.astro';
 import Trustpilot from '../components/Trustpilot.astro';
 import Card from '../components/Card.astro';
@@ -23,7 +24,7 @@ import thumbsup from "../assets/images/thumbsup.png";
 
         <ul class="steps">
             <li class="step step-primary">Register</li>
-            <li class="step step-primary">Choose plan</li>
+            <li class="step">Choose plan</li>
             <li class="step">Purchase</li>
             <li class="step">Receive Product</li>
           </ul>
@@ -37,6 +38,51 @@ import thumbsup from "../assets/images/thumbsup.png";
         mulighed2="Sydamerika"
         mulighed3="Asien"
         mulighed4="Afrika"
+        url="/singleview"
+        urlbuttontekst2="Næste"
+        urlbuttontekst1="Tilbage"
           ></Travelform>
+
+          <ul class="steps">
+            <li class="step step-primary">Register</li>
+            <li class="step step-primary">Choose plan</li>
+            <li class="step">Purchase</li>
+            <li class="step">Receive Product</li>
+          </ul>
+
+          <Travelform2
+          img="Japan.webp" 
+          imgtekst="japan"
+          titel="Hvor vil du gerne hen?"
+          tekst="Hvilken verdensdel drømmer du mest om?"
+          mulighed1="Europa"
+          mulighed2="Sydamerika"
+          mulighed3="Asien"
+          mulighed4="Afrika"
+          url="/singleview"
+          urlbuttontekst2="Næste"
+          urlbuttontekst1="Tilbage"
+            ></Travelform2>
+
+            <ul class="steps">
+              <li class="step step-primary">Register</li>
+              <li class="step step-primary">Choose plan</li>
+              <li class="step step-primary">Purchase</li>
+              <li class="step">Receive Product</li>
+            </ul>
  
+            <Travelform
+            img="Japan.webp" 
+            imgtekst="japan"
+            titel="Hvor vil du gerne hen?"
+            tekst="Hvilken verdensdel drømmer du mest om?"
+            mulighed1="Europa"
+            mulighed2="Sydamerika"
+            mulighed3="Asien"
+            mulighed4="Afrika"
+            url="/singleview"
+            urlbuttontekst2="Næste"
+            urlbuttontekst1="Tilbage"
+              ></Travelform>
+
   </MainLayout>
