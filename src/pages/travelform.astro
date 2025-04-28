@@ -4,6 +4,7 @@ import tailwind from "../styles/tailwind.css";
 import Button from '../components/Button.astro';
 import Header from '../components/Header.astro';
 import Icon from '../components/Icon.astro';
+import Travelform from '../components/Travelform.astro';
 import Dropdown from '../components/Dropdown.astro';
 import Trustpilot from '../components/Trustpilot.astro';
 import Card from '../components/Card.astro';
@@ -26,5 +27,16 @@ import thumbsup from "../assets/images/thumbsup.png";
             <li class="step">Purchase</li>
             <li class="step">Receive Product</li>
           </ul>
+
+          <Travelform
+        img="Japan.webp" 
+        imgtekst="japan"
+        titel="Hvor vil du gerne hen?"
+        tekst="Hvilken verdensdel drømmer du mest om?"
+        mulighed1="Europa"
+        mulighed2="Sydamerika"
+        mulighed3="Asien"
+        mulighed4="Afrika"
+          ></Travelform>
  
   </MainLayout>
