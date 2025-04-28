@@ -1,0 +1,15 @@
+---
+const { time="", titel="", tekst="", navn="" } = Astro.props;
+--- 
+
+<div class="carousel rounded-box">
+  <div class="carousel-item">
+    <p>{time}</p>
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+      alt="Rating" />
+      <h3>{titel}</h3>
+      <p>{tekst}</p>
+      <p>{navn}</p>
+  </div>
+</div>
