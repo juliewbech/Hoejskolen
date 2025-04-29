@@ -1,8 +1,12 @@
 ---
-const { iconimage="", tekst="" } = Astro.props;
+const { iconimage="", iconimagealt="", tekst="" } = Astro.props;
 ---
 
-<div>
-    <div>{iconimage}</div>
-    <div>{tekst}</div>
+<div >
+    <div class="flex justify-center">
+        <img
+       src={iconimage}
+       alt={iconimagealt} />
+    </div>
+    <div class="flex justify-center">{tekst}</div>
 </div>
