@@ -7,6 +7,7 @@ import Icon from '../components/Icon.astro';
 import Dropdown from '../components/Dropdown.astro';
 import Trustpilot from '../components/Trustpilot.astro';
 import Card from '../components/Card.astro';
+import Deltagercard from '../components/Deltagercard.astro';
 import Form from '../components/Card.astro';
 import Button2 from '../components/Button2.astro';
 import Link from '../components/Link.astro';
@@ -182,54 +183,44 @@ tekst="Vilde naturoplevelser"
 
 
        <!-- Section 5 -->
-       <section class="">
-        <h2>Section 5</h2>
-        <h2>Tidligere deltager</h2>
+       <section class=" ">
         <section>
           <div
-            class="hero min-h-screen relative"
-            style="background-image: url('Japan.webp');">
-            
+          class="hero min-h-screen relative "
+          style="background-image: url('background.webp');">
           
-            <!-- Overlay -->
-            <div class="hero-overlay"></div>
           
-            <!-- Content -->
-            <div class="">
+          <!-- Overlay -->
+          <div class="hero-overlay"></div>
+          
+          <!-- Content -->
+          <div class="m-sectiontop px-4 pt-15 pb-15 ">
+              <h2 class="font-unbounded text-4xl text-white pb-7 pt-15">Tidligere deltager</h2>
             <div class="grid grid-cols-3 gap-4">
-              <Card
+              <Deltagercard
               url="/singleview"
-              cardimage="Japan.webp"
+              cardimage="Emilie.webp"
               cardimagealt="3"
-              cardtitel="Navn, alder, by"
-              cardtekst="Lorem ipsum"
-              cardbuttontekst="Læs mere" 
-              badgenyt="false"
-              badgerabat="false"
-              badgefaatilbage="false"
-              ></Card>
-              <Card
+              cardtitel="Emilie, 24 år, Ribe"
+              cardtekst="Brasilien, Costa Rica & Mexico"
+              cardbeskrivelse="I foråret 2023 tog jeg på højskole i udlandet med HÖJSKOLENDK. Det var en fantastisk oplevelse, hvor jeg fik mulighed for at rejse til Brasilien, Costa Rica og Mexico. Jeg fik mulighed for at opleve en helt ny kultur og møde mange spændende mennesker. Jeg lærte også en masse om mig selv og fik nye venner for livet."
+              ></Deltagercard>
+              <Deltagercard
               url="/singleview"
-              cardimage="Japan.webp"
+              cardimage="Simon.webp"
               cardimagealt="3"
-              cardtitel="Navn, alder, by"
-              cardtekst="Lorem ipsum"
-              cardbuttontekst="Læs mere" 
-              badgenyt="false"
-              badgerabat="false"
-              badgefaatilbage="false"
-              ></Card>
-              <Card
+              cardtitel="Simon, 22 år, Odense"
+              cardtekst="Indien, Nepal, Thailand, Vietnam & Sri Lanka"
+              cardbeskrivelse="Jeg har altid drømt om at rejse til Asien, og med HÖJSKOLENDK fik jeg muligheden for at gøre det. Jeg rejste til Indien, Nepal, Thailand, Vietnam og Sri Lanka. Det var en oplevelse for livet, hvor jeg fik mulighed for at lære om forskellige kulturer og møde mange spændende mennesker."
+              ></Deltagercard>
+              <Deltagercard
               url="/singleview"
-              cardimage="Japan.webp"
+              cardimage="Mathilde.webp"
               cardimagealt="3"
-              cardtitel="Navn, alder, by"
-              cardtekst="Lorem ipsum"
-              cardbuttontekst="" 
-              badgenyt="false"
-              badgerabat="false"
-              badgefaatilbage="false"
-              ></Card>
+              cardtitel="Mathilde, 21 år, Haderslev"
+              cardtekst="Hawaii, Australien, Japan, Bali & Gili Islands"
+              cardbeskrivelse="Når jeg kigger tilbage på mit højskoleophold, kan jeg ikke lade være med at smile. Det var en fantastisk oplevelse, hvor jeg fik mulighed for at rejse til Hawaii, Australien, Japan, Bali og Gili Islands. Jeg fik mulighed for at opleve en helt ny kultur og møde mange spændende mennesker. Jeg lærte også en masse om mig selv."
+              ></Deltagercard>
           </div>
     </section>
 
