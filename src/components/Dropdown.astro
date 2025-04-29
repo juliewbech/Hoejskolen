@@ -1,13 +1,14 @@
 ---
 const { title="", content="" } = Astro.props;
 ---
-
-<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+<section class="p-2">
+<div class="collapse collapse-arrow bg-white text-brown">
   <input type="radio" name="my-accordion-2" checked="checked" />
-  <div class="collapse-title font-semibold">
-    <h2>{title}</h2>
+  <div class="collapse-title font-brico">
+    <h2 class="text-brown">{title}</h2>
   </div>
-  <div class="collapse-content text-sm">
-    <p>{content}</p>
+  <div class="collapse-content text-sm text-brown">
+    <p class="text-brown">{content}</p>
   </div>
 </div>
+</section>

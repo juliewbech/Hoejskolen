@@ -42,8 +42,8 @@ import thumbsup from "../assets/images/thumbsup.png";
         <!-- Content -->
         <div class="hero-content text-neutral-content text-center">
         <div class="">
-          <h1 class="mb-5 text-7xl font-unbounded">Højskole i udlandet</h1>
-          <h2 class="mb-5 text-2xl font-unbounded">
+          <h1 class="mb-5 text-7xl font-unbounded text-white">Højskole i udlandet</h1>
+          <h2 class="mb-5 text-2xl font-unbounded text-white">
          Eventyr, selvudvikling & fællesskab
           </h2>
           <Button variant="primary" size="medium"><a href="/travelform">Reservér din plads</a></Button>
@@ -88,55 +88,48 @@ import thumbsup from "../assets/images/thumbsup.png";
       
 
         <!-- Section 2 -->
-        <section class="container mx-auto m-sectiontop px-4 pt-15">
-          <h2>Section 2</h2>
-          <div class="grid grid-cols-5 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <section class=" m-sectiontop px-4 pt-15 pb-15 bg-orange text-white font-brico">
+          <div class=" container mx-auto grid grid-cols-5 md:grid-cols-3 lg:grid-cols-5 gap-4">
 <Icon
-iconimage="Japan.webp"
-tekst="Lorem ipsum"
+iconimage="teambuilding.svg"
+iconimagealt="teambulding"
+tekst="Team building"
 ></Icon>
 <Icon
-iconimage="Japan.webp"
-tekst="Lorem ipsum"
+iconimage="volunteer.svg"
+iconimagealt="volunteer"
+tekst="Frivilligt arbejde & kulturforståelse"
 ></Icon>
 <Icon
-iconimage="Japan.webp"
-tekst="Lorem ipsum"
+iconimage="sun.svg"
+iconimagealt="friuger"
+tekst="Friuger - et væld af muligheder"
 ></Icon>
 <Icon
-iconimage="Japan.webp"
-tekst="Lorem ipsum"
+iconimage="smiley.svg"
+iconimagealt="smiley"
+tekst="Spændende kulturoplevelser"
 ></Icon>
 <Icon
-iconimage="Japan.webp"
-tekst="Lorem ipsum"
+iconimage="mountain.svg"
+iconimagealt="mountain"
+tekst="Vilde naturoplevelser"
 ></Icon>
 
           </div>
           </section>
 
        <!-- Section 3 -->
-      <section class="container mx-auto m-sectiontop px-4 pt-15">
-        <h2 class="">Section 3</h2>
-        <h2 class="font-unbounded text-4xl">Vores populære ophold</h2>
+      <section class=" m-sectiontop px-4 pt-15 pb-15 bg-beige">
+        <section class="container mx-auto ">
+        <h2 class="font-unbounded text-4xl text-brown pb-7">Vores populære ophold</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           <Card
           url="/singleview"
-          cardimage="Japan.webp"
+          cardimage="australien.webp"
           cardimagealt="1"
-          cardtitel="Destination"
-          cardtekst="Lorem ipsum"
-          cardbuttontekst="Læs mere" 
-          badgenyt="true"
-          badgerabat="false"
-          badgefaatilbage="false"
-          ></Card>
-          <Card
-          url="/singleview"
-          cardimage="Japan.webp"
-          cardimagealt="2"
-          cardtitel="Destination"
-          cardtekst="Lorem ipsum"
+          cardtekst="2 måneder til"
+          cardtitel="Australien, Japan, Bali & Gili Islands"
           cardbuttontekst="Læs mere" 
           badgenyt="false"
           badgerabat="false"
@@ -144,29 +137,46 @@ tekst="Lorem ipsum"
           ></Card>
           <Card
           url="/singleview"
-          cardimage="Japan.webp"
+          cardimage="indien.webp"
+          cardimagealt="2"
+          cardtekst="2 måneder til"
+          cardtitel="Indien, Nepal, Vietnam & Sri Lanka"
+          cardbuttontekst="Læs mere" 
+          badgenyt="false"
+          badgerabat="false"
+          badgefaatilbage="false"
+          ></Card>
+          <Card
+          url="/singleview"
+          cardimage="brasilien.webp"
           cardimagealt="3"
-          cardtitel="Destination"
-          cardtekst="Lorem ipsum"
+          cardtekst="3 måneder til"
+          cardtitel="Brasilien, Colombia, Costa Rica & Mexico"
           cardbuttontekst="Læs mere" 
           badgenyt="false"
           badgerabat="false"
           badgefaatilbage="false"
           ></Card>
         </div>
-        <Button>Læs mere</Button>
+        <div  class="flex justify-center pt-15">
+        <Button>Se flere rejser</Button>
+      </div>
+      </section>
     </section>
       
        <!-- Section 4 -->
-        <section class="container mx-auto m-sectiontop px-4 pt-15">
-          <h2>Section 4</h2>
-          <h2>Ofte stillede spørgsmål</h2>
+        <section class=" m-sectiontop px-4 pt-15 pb-15 bg-orange">
+          <section class="container mx-auto">
+          <h2 class="font-unbounded text-4xl text-white pb-7">Ofte stillede spørgsmål</h2>
        <Dropdown title="Hvordan tilmelder jeg mig?" content="Her kan du finde information om, hvordan du tilmelder dig." />
        <Dropdown title="Er rejseforsrikring inkluderet i mit ophold?" content="Her kan du finde information om, hvordan du tilmelder dig." />
        <Dropdown title="Hvornår er der infomøder?" content="Her kan du finde information om, hvordan du tilmelder dig."/>
        <Dropdown title="Hvad handler undervisningen om?" content="Her kan du finde information om, hvordan du tilmelder dig."/>
        <Dropdown title="Hvor mange penge kan jeg forvente at bruge på mit ophold?" content="Her kan du finde information om, hvordan du tilmelder dig."/>
-       <Button>Find infomøder her</Button>
+   <div class="flex justify-center pt-15">
+       <Button  variant="secondary" size="medium">Find infomøder her</Button>
+      </div>
+      </section>
       </section>
 
 

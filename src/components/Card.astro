@@ -1,25 +1,26 @@
 ---
 import Heading from '../components/Heading.astro';
+import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 
-const { url="#", cardimage="", cardimagealt="", cardtitel="", cardtekst="", cardbuttontekst="",
+const { url="#", cardimage="", cardimagealt="",  cardtitel="", cardtekst="", cardbuttontekst="",
   badgenyt="false", badgerabat="false", badgefaatilbage="" } = Astro.props;
 ---
 
-<div class="card bg-base-100 w-full shadow-sm">
-    <figure class="relative">
-      {(badgenyt === "true") && <div class="badge badge-primary absolute top-4 left-0">Ny vin</div>}
+<div class="card  w-full shadow-md bg-white rounded-3xl">
+    <figure class="relative pt-8 w-full">
+      {(badgenyt === "true") && <div class="badge badge-primary absolute top-4 left-0">Spritnyt ophold</div>}
       {(badgerabat !== "false") && <div class="badge badge-secondary absolute rounded-full top-4 right-0 hover:rotate-6 transition-all">20 %</div>}
       {(badgefaatilbage === "true") && <div class="badge badge-warning @sm:badge-xl absolute bottom-4 left-0">Kun få flasker tilbage</div>}
-      <img
+      <img class=" rounded-3xl"
        src={cardimage}
        alt={cardimagealt} />
     </figure>
-    <div class="card-body">
-      <Heading htmlheading="h2" size="medium" Stylingclasses="card-titel">{cardtitel}</Heading>
-      <p>{cardtekst}</p>
-      <div class="card-actions justify-end">
-        <Link href={url} variant="primary" size="medium">{cardbuttontekst}</Link>
+    <div class="card-body p-8">
+      <p class="text-brown font-brico">{cardtekst}</p>
+      <h1 class="text-black text-lg font-brico">{cardtitel}</h1>
+      <div class="card-actions justify-end pt-2">
+        <Button href={url} variant="primary" size="small">{cardbuttontekst}</Button>
       </div>
     </div>
   </div>
