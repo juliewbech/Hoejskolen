@@ -4,11 +4,17 @@
 @plugin '@tailwindcss/forms';
 
 @plugin "daisyui" {
-  themes: garden;
+  themes: ;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@theme {
+  --color-orange: #ed642b;
+  --color-green: #dcf6ce;
+  --color-darkgreen: #26533f;
 }
 
 @layer base {
