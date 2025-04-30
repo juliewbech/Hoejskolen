@@ -28,30 +28,43 @@ import thumbsup from "../assets/images/thumbsup.png";
   <MainLayout title="Højskolen">
 	
     <section>
-      <div
-        class="hero min-h-screen relative"
-        style="background-image: url('travelform1.webp');">
+      <div class="hero min-h-screen relative overflow-hidden">
         
-        <!-- Header placeres absolut -->
+        {/* Video baggrund */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          class="absolute w-full h-full object-cover z-0"
+        >
+          <source src="https://i.imgur.com/X8bkhRr.mp4" type="video/mp4" />
+          Din browser understøtter ikke HTML5 video.
+        </video>
+    
+        {/* Header placeres absolut */}
         <div class="fixed top-2 p-2 w-full z-50">
-        <Header />
+          <Header />
         </div>
+    
+        {/* Overlay */}
       
-        <!-- Overlay -->
-        <div class="hero-overlay"></div>
-      
-        <!-- Content -->
-        <div class="hero-content text-neutral-content text-center">
-        <div class="">
-          <h1 class="mb-5 text-7xl font-unbounded text-white">Højskole i udlandet</h1>
-          <h2 class="mb-5 text-2xl font-unbounded text-white">
-         Eventyr, selvudvikling & fællesskab
-          </h2>
-          <Button variant="primary" size="medium"><a href="/travelform">Reservér din plads</a></Button>
-        </div>
+    
+        {/* Content */}
+        <div class="hero-content text-neutral-content text-center z-20 relative">
+          <div>
+            <h1 class="mb-5 text-7xl font-unbounded text-white">Højskole i udlandet</h1>
+            <h2 class="mb-5 text-2xl font-unbounded text-white">
+              Eventyr, selvudvikling & fællesskab
+            </h2>
+            <Button variant="primary" size="medium">
+              <a href="/travelform">Reservér din plads</a>
+            </Button>
+          </div>
         </div>
       </div>
-      </section>
+    </section>
+    
     
       <!-- Section 1 -->
       <section class=" m-sectiontop px-4 pt-15 pb-15 bg-beige">
