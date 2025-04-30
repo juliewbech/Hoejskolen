@@ -1,19 +1,19 @@
 ---
 const { href = "#", target = "_self", variant = "primary", size = "medium" } = Astro.props;
 
-const linkStyling = "duration-1000";
+const linkStyling = "px-8 py-2  rounded-3xl shadow-md font-brico";
 
 const variantClasses = {
     "textlink": "underline text-blue-800",
-    "primary": "inline-block border-2 my-4 px-8 py-2 hover:text-white border-black hover:bg-black",
-    "secondary": "relative inline-block text-black after:block after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-full"
+    "primary": "bg-orange text-white transition delay-150 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-20  cursor-pointer",
+    "secondary": "bg-green text-darkgreen transition delay-150 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110  cursor-pointer",
+    "tertiary": "bg-beige text-orange transition delay-150 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110  cursor-pointer",
 };
 
 const sizeClasses = {
-    "standard": "hover:font-bold",
-    "large": "text-xl font-bold uppercase hover:-skew-x-20",
-    "medium": "text-lg hover:-skew-x-20",
-    "small": "text-md hover:-skew-x-20"
+  "large": "text-lg",
+     "medium": "text-base",
+      "small": "text-sm"
 };
 ---
 

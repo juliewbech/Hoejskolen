@@ -5,34 +5,34 @@ const {  img="", imgtekst="", titel="",  mulighed1="", mulighed2="", mulighed3="
 
 ---
 
-<section class="grid grid-cols-2">
-<div class="pt-15">
-    <h2>{titel}</h2>
-    <p>{tekst}</p>
-    <ul class="list bg-base-100 rounded-box">
+<section class="grid grid-cols-2 pb-7">
+<div class="">
+    <h2 class="font-unbounded text-4xl text-beige pb-4">{titel}</h2>
+    <p class="font-brico text-xl text-beige pb-4">{tekst}</p>
+    <ul class="list  rounded-box">
 
         
-        <li class="list-row grid grid-cols-2 pt-15">
+        <li class="list-row grid grid-cols-2 pt-15 ">
           <div>
-            <div>{mulighed1}</div>
+            <div class="font-brico text-xl text-beige">{mulighed1}</div>
           </div>
           <div> 
             <input type="radio" name="radio-1" class="radio" />
             </div>
         </li>
-        
         <li class="list-row grid grid-cols-2">
             <div>
-            <div>{mulighed2}</div>
+            <div class="font-brico text-xl text-beige">{mulighed2}</div>
           </div>
           <div> 
             <input type="radio" name="radio-1" class="radio" />
             </div>
+            
         </li>
         
         <li class="list-row grid grid-cols-2">
             <div>
-            <div>{mulighed3}</div>
+            <div class="font-brico text-xl text-beige">{mulighed3}</div>
           </div>
           <div> 
             <input type="radio" name="radio-1" class="radio" />
@@ -41,7 +41,7 @@ const {  img="", imgtekst="", titel="",  mulighed1="", mulighed2="", mulighed3="
 
         <li class="list-row grid grid-cols-2">
             <div>
-            <div>{mulighed4}</div>
+            <div class="font-brico text-xl text-beige">{mulighed4}</div>
           </div>
           <div> 
             <input type="radio" name="radio-1" class="radio" />
@@ -49,17 +49,17 @@ const {  img="", imgtekst="", titel="",  mulighed1="", mulighed2="", mulighed3="
         </li>
         
       </ul>
-      <section class="grid grid-cols-2 gap-8 pt-15">
+      <section class="grid grid-cols-2 gap-8 pt-25">
         <div>
-          <Link href={url1} variant="primary" size="medium">{urlbuttontekst1}</Link>
+          <Link href={url1} variant="tertiary" size="medium">{urlbuttontekst1}</Link>
     </div>
     <div>
-      <Link href={url2} variant="primary" size="medium">{urlbuttontekst2}</Link>
+      <Link href={url2} variant="secondary" size="medium">{urlbuttontekst2}</Link>
     </div>
     </section>
 </div>
 <div>
-    <img class="width-1/2"
+    <img class="width-1/3"
     src={img}
     alt={imgtekst} />
 </div>

@@ -1,72 +1,66 @@
 ---
 import Link from '../components/Link.astro';
 
-const {  img="", imgtekst="", titel="",  mulighed1="", mulighed2="", mulighed3="", mulighed4="", tekst="", url="", urlbuttontekst1="", urlbuttontekst2="" } = Astro.props;
+const {  img="", imgtekst="", titel="",  mulighed1="", mulighed2="", mulighed3="", mulighed4="", tekst="", url1="", url2="", urlbuttontekst1="", urlbuttontekst2="" } = Astro.props;
 
-//Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
-const variantClasses = {
-"primary": "btn-primary",
-"secondary": "btn-secondary"
-};
 ---
 
-<section class="grid grid-cols-2">
-    <div>
-        <img
-        src={img}
-        alt={imgtekst} />
-    </div>
-<div>
-    <h2>{titel}</h2>
-    <p>{tekst}</p>
-    <ul class="list bg-base-100 rounded-box">
+<section class="grid grid-cols-2 gap-4">
+<div class="">
+    <h2 class="font-unbounded text-4xl text-orange pb-4">{titel}</h2>
+    <p class="font-brico text-xl text-orange pb-4">{tekst}</p>
+    <ul class="list  rounded-box">
 
         
-        <li class="list-row grid grid-cols-2">
+        <li class="list-row grid grid-cols-2 pt-15">
           <div>
-            <div>{mulighed1}</div>
+            <div class="font-brico text-xl text-orange">{mulighed1}</div>
           </div>
           <div> 
-            <input type="radio" name="radio-1" class="radio" />
+            <input type="radio" name="radio-1" class="radio bg-orange" />
             </div>
+        </li>
+        <li class="list-row grid grid-cols-2">
+            <div>
+            <div class="font-brico text-xl text-orange">{mulighed2}</div>
+          </div>
+          <div> 
+            <input type="radio" name="radio-1" class="radio bg-orange" />
+            </div>
+            
         </li>
         
         <li class="list-row grid grid-cols-2">
             <div>
-            <div>{mulighed2}</div>
+            <div class="font-brico text-xl text-orange">{mulighed3}</div>
           </div>
           <div> 
-            <input type="radio" name="radio-1" class="radio" />
-            </div>
-        </li>
-        
-        <li class="list-row grid grid-cols-2">
-            <div>
-            <div>{mulighed3}</div>
-          </div>
-          <div> 
-            <input type="radio" name="radio-1" class="radio" />
+            <input type="radio" name="radio-1" class="radio bg-orange" />
             </div>
         </li>
 
         <li class="list-row grid grid-cols-2">
             <div>
-            <div>{mulighed4}</div>
+            <div class="font-brico text-xl text-orange">{mulighed4}</div>
           </div>
           <div> 
-            <input type="radio" name="radio-1" class="radio" />
+            <input type="radio" name="radio-1" class="radio bg-orange" />
             </div>
         </li>
         
       </ul>
-      <section class="grid grid-cols-2 gap-8">
+      <section class="grid grid-cols-2 gap-8 pt-25">
         <div>
-          <Link href={url} variant="primary" size="medium">{urlbuttontekst1}</Link>
+          <Link href={url1} variant="primary" size="medium">{urlbuttontekst1}</Link>
     </div>
     <div>
-      <Link href={url} variant="primary" size="medium">{urlbuttontekst2}</Link>
+      <Link href={url2} variant="secondary" size="medium">{urlbuttontekst2}</Link>
     </div>
     </section>
 </div>
-
+<div>
+    <img class="width-1/3"
+    src={img}
+    alt={imgtekst} />
+</div>
 </section>
